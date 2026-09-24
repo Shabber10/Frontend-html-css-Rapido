@@ -7,9 +7,9 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/Shabber10/Frontend-html-css-Rapido-/stargazers"><img src="https://img.shields.io/github/stars/Shabber10/Frontend-html-css-Rapido-?color=f9c935&logo=github&style=for-the-badge" alt="Stars" /></a>
-    <a href="https://github.com/Shabber10/Frontend-html-css-Rapido-/network/members"><img src="https://img.shields.io/github/forks/Shabber10/Frontend-html-css-Rapido-?color=f9c935&logo=github&style=for-the-badge" alt="Forks" /></a>
-    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-"><img src="https://img.shields.io/badge/Netlify-Ready-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify" /></a>
+    <a href="https://rapidodemo.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-rapidodemo.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
+    <a href="https://github.com/Shabber10/Frontend-html-css-Rapido/stargazers"><img src="https://img.shields.io/github/stars/Shabber10/Frontend-html-css-Rapido?color=f9c935&logo=github&style=for-the-badge" alt="Stars" /></a>
+    <a href="https://github.com/Shabber10/Frontend-html-css-Rapido/network/members"><img src="https://img.shields.io/github/forks/Shabber10/Frontend-html-css-Rapido?color=f9c935&logo=github&style=for-the-badge" alt="Forks" /></a>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   </p>
@@ -17,8 +17,8 @@
   <br />
 
   <p align="center">
-    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-">
-      <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" height="42" />
+    <a href="https://rapidodemo.netlify.app/" target="_blank">
+      <img src="https://img.shields.io/badge/👉_EXPLORE_LIVE_SITE-Visit_Now-F9C935?style=for-the-badge&labelColor=1a1a1a&color=f9c935" alt="Explore Live Site" height="40" />
     </a>
   </p>
 
@@ -29,6 +29,7 @@
 ## 📌 Table of Contents
 
 - [✨ Overview](#-overview)
+- [🔗 Live Demo](#-live-demo)
 - [🖼️ Preview & Showcase](#️-preview--showcase)
 - [🚀 Key Features](#-key-features)
 - [🛠️ Tech Stack](#️-tech-stack)
@@ -51,11 +52,21 @@ This project is a clean, semantic, and responsive recreation of the **Rapido** l
 
 ---
 
+## 🔗 Live Demo
+
+Check out the live deployment hosted globally on **Netlify**:
+
+👉 **[https://rapidodemo.netlify.app/](https://rapidodemo.netlify.app/)**
+
+---
+
 ## 🖼️ Preview & Showcase
 
 <div align="center">
-  <img src="images/banner_image_new.png" alt="Rapido Banner Preview" width="85%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12);" />
-  <p><em>Hero section with ride-hailing visual and instant booking form widget</em></p>
+  <a href="https://rapidodemo.netlify.app/" target="_blank">
+    <img src="images/preview.png" alt="Rapido Live Netlify Website Preview" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+  </a>
+  <p><em>Live Website Interface (<a href="https://rapidodemo.netlify.app/">rapidodemo.netlify.app</a>) — Ride-hailing hero section, booking form & service tabs</em></p>
 </div>
 
 ---
@@ -86,7 +97,7 @@ This project is a clean, semantic, and responsive recreation of the **Rapido** l
 ## 📁 Project Structure
 
 ```bash
-Frontend-html-css-Rapido-/
+Frontend-html-css-Rapido/
 ├── images/                   # Vector SVGs, icons, and promotional PNG assets
 │   ├── app_store.svg
 │   ├── auto_service.png
@@ -99,6 +110,7 @@ Frontend-html-css-Rapido-/
 │   ├── nevertofar_offer.png
 │   ├── parcel_service.png
 │   ├── play_store.svg
+│   ├── preview.png           # Live Netlify deployment screenshot
 │   ├── serviceimage.svg
 │   ├── showcase_image.png
 │   └── travel_service.png
@@ -115,21 +127,21 @@ Frontend-html-css-Rapido-/
 
 ### Method 1: Connect GitHub Repository (Recommended)
 
-This method connects your GitHub repository so that **every time you push new code, Netlify automatically redeploys your site**!
+This connects your GitHub repository so that **every time you push new code, Netlify automatically redeploys your site**!
 
-1. Go to **[app.netlify.com](https://app.netlify.com/)** and log in (or sign up) with your **GitHub** account.
+1. Go to **[app.netlify.com](https://app.netlify.com/)** and log in with your **GitHub** account.
 2. Click **"Add new site"** (top right) ➔ select **"Import an existing project"**.
 3. Choose **GitHub** as your Git provider.
-4. Select your repository: **`Shabber10/Frontend-html-css-Rapido-`**.
+4. Select your repository: **`Shabber10/Frontend-html-css-Rapido`**.
 5. Netlify will automatically detect the settings from [`netlify.toml`](./netlify.toml):
    - **Branch**: `main`
    - **Build command**: *(leave empty)*
    - **Publish directory**: `.`
-6. Click **"Deploy Frontend-html-css-Rapido-"**.
-7. In ~15 seconds, Netlify will generate your live URL (e.g., `https://your-app-name.netlify.app`).
+6. Click **"Deploy Frontend-html-css-Rapido"**.
+7. In ~15 seconds, Netlify will generate your live URL!
 
 > [!TIP]
-> You can change your site name to something custom like `rapido-clone.netlify.app` anytime in **Site configuration > Change site name**!
+> You can customize your site domain to `rapidodemo.netlify.app` in **Site configuration > Change site name**!
 
 ---
 
@@ -137,7 +149,7 @@ This method connects your GitHub repository so that **every time you push new co
 
 Deploy directly to your Netlify account in one step:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido)
 
 ---
 
