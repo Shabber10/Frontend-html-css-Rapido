@@ -26,26 +26,6 @@
 
 ---
 
-## 📌 Table of Contents
-
-- [✨ Overview](#-overview)
-- [🔗 Live Demo](#-live-demo)
-- [🖼️ Preview & Showcase](#️-preview--showcase)
-- [🚀 Key Features](#-key-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [⚡ How to Deploy on Netlify](#-how-to-deploy-on-netlify)
-  - [Method 1: Connect GitHub Repository (Recommended)](#method-1-connect-github-repository-recommended)
-  - [Method 2: One-Click Deploy Button](#method-2-one-click-deploy-button)
-  - [Method 3: Netlify Drop (Instant Drag & Drop)](#method-3-netlify-drop-instant-drag--drop)
-- [🌐 Netlify Configuration Explained](#-netlify-configuration-explained)
-- [💻 Run Locally](#-run-locally)
-- [🎨 Design Highlights](#-design-highlights)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-
----
-
 ## ✨ Overview
 
 This project is a clean, semantic, and responsive recreation of the **Rapido** landing page. It showcases pure **HTML5** and **CSS3** capabilities without heavy framework dependencies, focusing on layout accuracy, crisp typography, intuitive booking interactions, and brand aesthetic (distinctive yellow `#F9C935` & dark contrast).
