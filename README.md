@@ -9,15 +9,15 @@
   <p align="center">
     <a href="https://github.com/Shabber10/Frontend-html-css-Rapido-/stargazers"><img src="https://img.shields.io/github/stars/Shabber10/Frontend-html-css-Rapido-?color=f9c935&logo=github&style=for-the-badge" alt="Stars" /></a>
     <a href="https://github.com/Shabber10/Frontend-html-css-Rapido-/network/members"><img src="https://img.shields.io/github/forks/Shabber10/Frontend-html-css-Rapido-?color=f9c935&logo=github&style=for-the-badge" alt="Forks" /></a>
-    <a href="https://render.com"><img src="https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Render" /></a>
+    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-"><img src="https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify" /></a>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   </p>
 
   <br />
 
-  <a href="#-how-to-deploy-on-render">
-    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" height="38" />
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-">
+    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" height="38" />
   </a>
 
 </div>
@@ -30,9 +30,11 @@
 - [🚀 Key Features](#-key-features)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📁 Project Structure](#-project-structure)
-- [🌐 How to Deploy on Render](#-how-to-deploy-on-render)
-  - [Method 1: Manual Static Site (Recommended)](#method-1-manual-static-site-recommended)
-  - [Method 2: Blueprint Deployment (render.yaml)](#method-2-blueprint-deployment-renderyaml)
+- [⚡ How to Deploy on Netlify (3 Easy Ways)](#-how-to-deploy-on-netlify-3-easy-ways)
+  - [Method 1: Connect via GitHub (Recommended for Auto-Updates)](#method-1-connect-via-github-recommended-for-auto-updates)
+  - [Method 2: One-Click Instant Deploy](#method-2-one-click-instant-deploy)
+  - [Method 3: Netlify Drop (Zero Setup Drag-and-Drop)](#method-3-netlify-drop-zero-setup-drag-and-drop)
+- [🌐 Alternative: Deploy on Render](#-alternative-deploy-on-render)
 - [💻 Run Locally](#-run-locally)
 - [🎨 Design Highlights](#-design-highlights)
 - [🤝 Contributing](#-contributing)
@@ -65,7 +67,7 @@ This project is a clean, semantic, and responsive recreation of the **Rapido** l
 | **HTML5** | Semantic web page structure and accessible markups |
 | **CSS3** | Modern styling, CSS Grid, Flexbox, custom transitions & hover effects |
 | **Google Fonts** | `Poppins` typography for clean modern readability |
-| **Render** | Fast, free cloud hosting for static websites |
+| **Netlify** | Ultra-fast global CDN edge hosting with automatic CI/CD |
 
 ---
 
@@ -90,51 +92,68 @@ Frontend-html-css-Rapido-/
 │   └── travel_service.png
 ├── index.html                # Main semantic HTML markup
 ├── style.css                 # Global stylesheet and responsive design rules
-├── render.yaml               # Render Infrastructure-as-Code configuration
+├── netlify.toml              # Netlify configuration (publish directory)
+├── render.yaml               # Render configuration (alternative host)
 └── README.md                 # Project documentation
 ```
 
 ---
 
-## 🌐 How to Deploy on Render
+## ⚡ How to Deploy on Netlify (3 Easy Ways)
 
-Deploying this static site on **[Render](https://render.com)** takes under 2 minutes.
+### Method 1: Connect via GitHub (Recommended for Auto-Updates)
 
-### Method 1: Manual Static Site (Recommended)
+1. **Sign in to Netlify**:
+   - Go to [app.netlify.com](https://app.netlify.com/) and sign in with your GitHub account.
 
-1. **Sign in to Render**:
-   - Go to [dashboard.render.com](https://dashboard.render.com/) (Sign in with your GitHub account).
+2. **Add a New Site**:
+   - Click the **"Add new site"** button and choose **"Import an existing project"**.
 
-2. **Create New Static Site**:
-   - Click the **"New +"** button in the top navigation bar.
-   - Select **"Static Site"**.
+3. **Select GitHub**:
+   - Click on **GitHub** to authorize and select your repository:
+   - `Shabber10/Frontend-html-css-Rapido-`
 
-3. **Connect Repository**:
-   - Select `Shabber10/Frontend-html-css-Rapido-` from your repository list.
-   - *(If not visible, click "Configure GitHub App" to grant access to the repo).*
+4. **Verify Build Settings**:
+   Netlify will automatically detect [`netlify.toml`](./netlify.toml):
+   - **Branch to deploy**: `main`
+   - **Base directory**: *(Leave blank)*
+   - **Build command**: *(Leave blank)*
+   - **Publish directory**: `.`
 
-4. **Configure Settings**:
-   Fill in the configuration fields:
-   - **Name**: `rapido-frontend` *(or any preferred name)*
-   - **Branch**: `main`
-   - **Build Command**: *(Leave completely blank or empty)*
-   - **Publish Directory**: `.` *(a single dot representing the root directory)*
-
-5. **Deploy**:
-   - Click **"Create Static Site"**.
-   - Render will instantly deploy your site and provide a free live URL (e.g. `https://rapido-frontend.onrender.com`).
+5. **Deploy Site**:
+   - Click **"Deploy Frontend-html-css-Rapido-"**.
+   - Your site will be live within seconds at a free URL like `https://your-site-name.netlify.app`!
+   - Every time you `git push` new changes, Netlify will automatically rebuild and update your site.
 
 ---
 
-### Method 2: Blueprint Deployment (render.yaml)
+### Method 2: One-Click Instant Deploy
 
-Since this repository already includes a [`render.yaml`](./render.yaml) file:
+Simply click this button to clone & deploy directly into your Netlify account:
 
-1. Go to your [Render Dashboard](https://dashboard.render.com/).
-2. Click **"New +"** > **"Blueprint"**.
-3. Connect `Shabber10/Frontend-html-css-Rapido-`.
-4. Render will automatically detect `render.yaml` and configure the static site with zero manual inputs!
-5. Click **"Apply"** to deploy.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Shabber10/Frontend-html-css-Rapido-)
+
+---
+
+### Method 3: Netlify Drop (Zero Setup Drag-and-Drop)
+
+If you just want an immediate live preview without linking GitHub:
+
+1. Go to [app.netlify.com/drop](https://app.netlify.com/drop).
+2. Drag and drop the `rapido` project folder directly into the browser box.
+3. Your site is live immediately!
+
+---
+
+## 🌐 Alternative: Deploy on Render
+
+This repository also includes [`render.yaml`](./render.yaml) for Render:
+
+1. Go to [dashboard.render.com](https://dashboard.render.com/).
+2. Click **"New +"** > **"Static Site"**.
+3. Select `Shabber10/Frontend-html-css-Rapido-`.
+4. Leave **Build Command** empty and set **Publish Directory** to `.`.
+5. Click **"Create Static Site"**.
 
 ---
 
