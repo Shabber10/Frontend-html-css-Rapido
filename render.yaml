@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: rapido-frontend-clone
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
